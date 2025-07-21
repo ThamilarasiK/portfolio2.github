@@ -528,4 +528,135 @@
   }
   
   
-  
+  /* RESPONSIVE STYLES FOR MOBILE DEVICES */
+
+@media (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
+
+  .header {
+    height: 10vh;
+  }
+
+  .nav-bar {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .options {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: auto;
+  }
+
+  #link {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .name {
+    position: static;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .homebody {
+    height: auto;
+    margin-top: 13vh;
+    padding: 20px;
+    background-position: center;
+  }
+
+  .profileimg {
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+  }
+
+  #name, .web, .btn, .links {
+    position: static;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
+  .links {
+    margin-top: 10px;
+  }
+
+  /* About section */
+  .headingabout, .eduheading, .projectheading, #skills_heading, .condetheading, .headcontact {
+    font-size: 32px;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .contentabout, .educontent {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .photoabout, .eduimg, #skill_img, #conddelimg, .profilecontact {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    background-size: cover;
+  }
+
+  /* Skills */
+  #skillslist li, #skillslist1 li {
+    margin-left: 30px;
+  }
+
+  #skillslist1 {
+    position: static;
+    margin-top: 10px;
+  }
+
+  /* Projects slider */
+  .slide-track {
+    flex-wrap: wrap;
+    animation: none;
+    width: 100%;
+  }
+
+  .slide {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .pimg {
+    width: 100%;
+  }
+
+  /* Contact form */
+  .innerform {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  /* Contact Section Boxes */
+  .circle, .box {
+    position: static;
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Footer */
+  .footersection {
+    margin-top
