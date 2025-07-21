@@ -12,20 +12,32 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
   </head>
   <body class="homebody">
     <header class="header">
-      <h1 class="name">@Thamilarasi K</h1>
-      <nav class="nav-bar">
-        <div class="options">
-          <a id="link" href="#homepage">Home</a>
-          <a id="link" href="#aboutsection">About</a>
-          <a id="link" href="#skillssection">Skills</a>
-          <a id="link" href="#educationsection">Education</a>
-          <a id="link" href="#projectssection">Projects</a>
-          <a id="link" href="#contactdetailssection">Contact</a>
-        </div>
-      </nav>
+      <!-- <h1 class="name">@Thamilarasi K</h1> -->
+    <nav class="nav-bar">
+  <!-- Hamburger Icon -->
+  <div class="menu-toggle" id="mobile-menu">
+    <i class="fa-solid fa-bars"></i> <!-- Font Awesome icon -->
+  </div>
+
+  <!-- Nav Links -->
+  <div class="options" id="navbar-links">
+    <a id="link" href="#homepage">Home</a>
+    <a id="link" href="#aboutsection">About</a>
+    <a id="link" href="#skillssection">Skills</a>
+    <a id="link" href="#educationsection">Education</a>
+    <a id="link" href="#projectssection">Projects</a>
+    <a id="link" href="#contactdetailssection">Contact</a>
+  </div>
+</nav>
+
     </header>
 
     <!-- Home page starts -->
@@ -33,12 +45,12 @@
     <section id="homepage">
       <div class="background"></div>
       <div>
-        <h1 id="name">Hi There, <br />I'm THAMILARASI K</h1> <br>
+        <h1 id="name">Hi There, <br />I'm THAMILARASI K</h1><br>
         <p class="web">I Am Into Web Development</p>
       </div>
       <div class="profileimg"></div>
       <button class="btn" type="file" download>
-        <a class="resume" href="https://drive.google.com/file/d/183wW6h3aTaI6MrMjRp_ruVhqNhYT6gya/view?usp=drive_linkk"
+        <a class="resume" href="https://drive.google.com/file/d/183wW6h3aTaI6MrMjRp_ruVhqNhYT6gya/view?usp=drive_link"
           target="_blank"
           >Hire Me!</a
         >
@@ -143,7 +155,7 @@
       <div class="iconedu3"><i class="fa-solid fa-graduation-cap"></i></div>
       <p class="educontent">
         SSLC <br />
-        sri Bharathi Vidhyalaya Matriculation (2017-2018) <br />
+        Sri Bharathi Vidhyalaya Matriculation (2017-2018) <br />
         PERCENTAGE-75% <br />
         TamilNadu, India
       </p>
@@ -339,3 +351,18 @@
    < ?php include 'insert.php';?>
   </body>
 </html>
+<script>
+  const menuToggle = document.getElementById("mobile-menu");
+  const navbarLinks = document.getElementById("navbar-links");
+  const openIcon = document.querySelector(".open-icon");
+  const closeIcon = document.querySelector(".close-icon");
+
+  menuToggle.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+
+    // Toggle icons
+    const isActive = navbarLinks.classList.contains("active");
+    openIcon.style.display = isActive ? "none" : "inline-block";
+    closeIcon.style.display = isActive ? "inline-block" : "none";
+  });
+</script>
